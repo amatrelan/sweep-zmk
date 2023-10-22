@@ -1,5 +1,8 @@
+// vim: set ft=devicetree:
+
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
+
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -99,7 +102,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp LCTRL  &kp Z      &kp X      &kp C      &kp V          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp BSPC    &kp SPACE      &kp ENTER  &to 1
+                                            &kp BSPC    &kp SPACE      &kp ENTER  &to 0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
