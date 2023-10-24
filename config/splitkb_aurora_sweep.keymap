@@ -28,16 +28,6 @@
             then-layer = <3>;
         };
     };
-		
-		// I quess double behaviour is impossible in zmk
-		// combos {
-		// 	combatible = "zmk,combos";
-		// 	combo_esc {
-		// 		timeout-ms = <50>;
-		// 		key-positions = <16 17>;
-		// 		bindings = <&kp ESC>;
-		// 	};
-		// };
 
     keymap {
         compatible = "zmk,keymap";
@@ -106,10 +96,9 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp LCTRL  &kp Z      &kp X      &kp C      &kp V          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 SPACE &kp BKSP      &kp TAB	    &to 0
+                                            &kp SPACE   &kp BKSP       &kp TAB    &to 0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
     };
 };
-
