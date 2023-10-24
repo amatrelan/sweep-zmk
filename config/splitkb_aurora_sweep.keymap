@@ -3,15 +3,9 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-
-// Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
-#define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
-
 
 / {
     behaviors {
@@ -52,8 +46,8 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮ /* 0 - 9 */
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤ /* 10 - 19 */
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+          &ht LSHIFT A &ht LALT S &ht LCTRL D &ht LGUI F &kp G         &kp H    &ht RGUI J &ht RCTRL K &ht RALT L &ht RSHIFT SQT
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤ /* 20 - 29 */
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 SPACE &kp BKSP      &kp TAB  &lt 1 ENTER
@@ -108,13 +102,14 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
             &kp TAB    &kp Q      &kp W      &kp E      &kp R          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LSHIFT &kp A      &kp S      &kp D      &kp F					 &kp H      &kp J      &kp K      &kp L      &kp SEMI
+            &kp LSHIFT &kp A      &kp S      &kp D      &kp F					 &kp H      &kp J      &kp K      &kp L      &kp SQRT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp LCTRL  &kp Z      &kp X      &kp C      &kp V          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp BSPC    &kp SPACE      &kp ENTER  &to 0
+                                            &lt 2 SPACE &kp BKSP      &kp TAB	    &to 0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
     };
 };
+
