@@ -49,7 +49,7 @@
 
   combos {
     compatible = "zmk,combos";
-    COMBO(capsword, &caps_word, RM1 LM1, DEF, 40, 150)
+    COMBO(capsword, &caps_word, RM1 LM1, DEF, 40, 150);
   };
 
   keymap {
