@@ -49,7 +49,14 @@
 
   combos {
     compatible = "zmk,combos";
-    COMBO(capsword, &caps_word, RM1 LM1, DEF, 40, 150);
+    // COMBO(capsword, &caps_word, RM1 LM1, DEF, 40, 150);
+    combo_capsword {
+      bindings = <&caps_word>;
+      key-positions = <14 17>;
+      layers = <DEF>;
+      timeout-ms = <40>;
+      require-prior-idle-ms = <150>;
+    };
   };
 
   keymap {
