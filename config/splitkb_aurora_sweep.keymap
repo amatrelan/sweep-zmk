@@ -15,16 +15,6 @@
 #define SYM 2
 #define GAM 3
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP, ...) \
-  combo_##NAME { \
-    timeout-ms = <TERM>; \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <LAYERS>; \
-    require-prior-idle-ms = <QUICKTAP>; \
-    __VA_ARGS__ \
-  }
-
 / {
   behaviors {
     ht: hold_tap {
@@ -49,10 +39,9 @@
 
   combos {
     compatible = "zmk,combos";
-    // COMBO(capsword, &caps_word, RM1 LM1, DEF, 40, 150);
     combo_capsword {
       bindings = <&caps_word>;
-      key-positions = <14 17>;
+      key-positions = <13 16>;
       layers = <DEF>;
       timeout-ms = <40>;
       require-prior-idle-ms = <150>;
