@@ -125,11 +125,11 @@
     gaming_symbols {
       bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        &kp ESC       &kp N5     &kb N6     &kb N7     &kb N8         &kp Y      &kp U      &kp I      &kp O      &kp P
+        &kp ESC       &kp N5     &kp N6     &kp N7     &kp N8         &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        &trans        &trans     &trans     &kb T      &kb G          &kp H      &kp J      &kp K      &kp L      &kp ENTER
+        &trans        &trans     &trans     &kp T      &kp G          &kp H      &kp J      &kp K      &kp L      &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        &kp Z         &kb X      &kb C      &kb V      &kb B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ESC
+        &kp Z         &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         &kp SPACE   &kp BKSP       &kp TAB    &to DEF
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
