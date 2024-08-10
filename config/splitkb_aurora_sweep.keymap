@@ -59,7 +59,7 @@
       bindings = <&kp K_COPY>;
     };
 
-    combo_copy {
+    combo_paste {
       timeout-ms = <50>;
       key-positions = <22 23>;
       bindings = <&kp K_PASTE>;
