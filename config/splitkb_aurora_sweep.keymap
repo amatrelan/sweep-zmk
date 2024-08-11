@@ -106,7 +106,7 @@
         &kp TAB     &kp N1        &kp N2  &kp N3  &kp N4    &kp Y  &kp U  &kp I      &kp O    &kp P
         &kp LSHIFT  &kp Q         &kp W   &kp E   &kp R     &kp H  &kp J  &kp K      &kp L    &kp SQT
         &kp LCTRL   &kp A         &kp S   &kp D   &kp F     &kp N  &kp M  &kp COMMA  &kp DOT  &kp ESC
-        &kp BKSP    &lt GAS SPACE                                                    &kp ENTER  &to DEF
+        &lt GAS BKSP    &key SPACE                                                    &kp ENTER  &to DEF
       >;
     };
 
